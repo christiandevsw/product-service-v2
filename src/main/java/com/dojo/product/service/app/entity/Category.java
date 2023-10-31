@@ -26,5 +26,6 @@ public class Category {
     @Size(min = 20,max = 255)
     private String description;
     @Lob
+    @Column(columnDefinition = "LONGBLOB")
     private byte[] photo;
 }
